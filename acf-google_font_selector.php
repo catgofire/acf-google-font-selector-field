@@ -1,7 +1,7 @@
 <?php
 
 /*
-Plugin Name: Advanced Custom Fields: Google Font Selector
+Plugin Name: [FIXED & CUSTOMIZED] Advanced Custom Fields: Google Font Selector
 Plugin URI: https://github.com/danielpataki/ACF-Google-Font-Selector
 Description: A field for Advanced Custom Fields which allows users to select Google fonts with advanced options
 Version: 3.0.1

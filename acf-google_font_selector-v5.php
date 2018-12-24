@@ -133,10 +133,12 @@ class acf_field_google_font_selector extends acf_field {
 
 				<?php $font = str_replace( ' ', '+', $current_font_family ); ?>
 				<div class='acfgfs-preview'>
-					<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=<?php echo $font ?>">
+					<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=<?php echo $font ?>">
 
 					<div style='font-family:<?php echo $font ?>'>
-						<?php _e( 'This is a preview of the selected font', 'acf-google-font-selector-field' ) ?>
+						<h1>Heading</h1>
+						<p class="btn button">Button</button>
+						<p class="small">Quisquam facilis, <em>doloremque ullamcorper</em>, iste pellentesque soluta doloremque <strong>deleniti</strong>, adipiscing hendrerit massa, soluta alias felis, iure <a>dolorum occaecat</a> cras maxime? Mollis non laoreet duis hendrerit.</p>
 					</div>
 				</div>
 
