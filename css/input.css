@@ -43,8 +43,23 @@
 }
 
 .acfgfs-preview {
-    font-size:16px;
-    margin-top:11px;
-    background: #fafafa;
-    padding:11px;
+    margin-top:20px;
+    background: #ffffff;
+    padding:20px 30px;
+    line-height: 1.1;
+    font-size: 62.5%;
+}
+
+.acfgfs-preview h1 {
+    font-size: 40px;
+}
+
+.acfgfs-preview p.button {
+    margin-top: 1em;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.acfgfs-preview p.small {
+    font-size: 20px;
 }

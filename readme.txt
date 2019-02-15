@@ -1,10 +1,3 @@
-=== FORK to update a few things to make it work again ===
-- changed http:// to https:// in several places
-- updated the font-list.php to include only latest /  valid google fonts
-- changed js to load preview in admin
-- changed preview html to show different styles, Heading, paragraph, button, bold, italic
-
-
 === ACF: Google Font Selector ===
 Contributors: danielpataki
 Tags: acf, fonts, google

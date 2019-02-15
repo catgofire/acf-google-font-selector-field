@@ -144,21 +144,21 @@ class acf_field_google_font_selector extends acf_field {
 
 			</div>
 
-			<div class="acfgfs-form-control acfgfs-font-variants">
+			<!-- <div class="acfgfs-form-control acfgfs-font-variants">
 				<div class="acfgfs-form-control-title"><?php _e('Variants', 'acf-google-font-selector-field') ?></div>
 				<div class="acfgfs-list">
 					<?php acfgfs_display_variant_list( $field ) ?>
 				</div>
 
 			</div>
-
-			<div class="acfgfs-form-control acfgfs-font-subsets">
+ -->
+			<!-- <div class="acfgfs-form-control acfgfs-font-subsets">
 				<div class="acfgfs-form-control-title"><?php _e('Subsets', 'acf-google-font-selector-field') ?></div>
 				<div class="acfgfs-list">
 					<?php acfgfs_display_subset_list( $field ) ?>
 				</div>
 
-			</div>
+			</div> -->
 
 			<textarea name="acfgfs-font-data" class="acfgfs-font-data"><?php echo json_encode( $field ) ?></textarea>
 

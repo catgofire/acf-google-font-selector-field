@@ -4,8 +4,8 @@
 Plugin Name: [FIXED & CUSTOMIZED] Advanced Custom Fields: Google Font Selector
 Plugin URI: https://github.com/danielpataki/ACF-Google-Font-Selector
 Description: A field for Advanced Custom Fields which allows users to select Google fonts with advanced options
-Version: 3.0.1
-Author: Daniel Pataki
+Version: 3.0.2
+Author: Daniel Pataki, edited by OM
 Author URI: http://danielpataki.com
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html

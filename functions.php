@@ -77,7 +77,7 @@ function acfgfs_google_font_enqueue(){
     $subsets = ( empty( $subsets ) ) ? array('latin') : array_unique( $subsets );
     $subset_string = implode( ',', $subsets );
     $font_string = implode( '|', $font_element );
-    $request = 'https://fonts.googleapis.com/css?family=' . $font_string . '&subset=' . $subset_string;
+    $request = '//fonts.googleapis.com/css?family=' . $font_string . '&subset=' . $subset_string;
     wp_enqueue_style( 'acfgfs-enqueue-fonts', $request );
 }
 
