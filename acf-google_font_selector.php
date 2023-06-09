@@ -44,20 +44,6 @@ function include_field_types_google_font_selector( $version ) {
 	include_once('acf-google_font_selector-v5.php');
 }
 
-add_action('acf/register_fields', 'register_fields_google_font_selector');
-/**
- * ACF 4 Field
- *
- * Loads the field for ACF 4
- *
- * @author Daniel Pataki
- * @since 3.0.0
- *
- */
-function register_fields_google_font_selector() {
-	include_once('acf-google_font_selector-v4.php');
-}
-
 add_action( 'admin_notices', 'acfgfs_setup_nag' );
 /**
  * API Key Nag
