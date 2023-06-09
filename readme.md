@@ -68,17 +68,32 @@ If you want to modify the fonts that are loaded on a page you can use the `acfgf
     'subsets' => array( 'latin' )
 )`
 
-New in 3.0.1 is the ability to control the fonts displayed in the dropdown. If you only want to give your users access to a smaller portion of Google fonts you can use the `acfgfs/font_dropdown_array` filter to modify the array that is used to generate the dropdown. Please return an array where the key and the value are both the names of the font.
+New in 3.0.1 is the ability to control the fonts displayed in the dropdown. If you only want to give your users access to a smaller portion of Google fonts you can use the `acfgfs/font_dropdown_array` filter to modify the array that is used to generate the dropdown.
 
-`add_filter( 'acfgfs/font_dropdown_array', 'my_font_list' );
-function my_font_list( $fonts ) {
-    $fonts = array(
-        'Raleway' => 'Raleway',
-        'Lato' => 'Lato'
-    );
-    return $fonts;
-}
-`
+```php
+add_filter( 'acfgfs/font_dropdown_array', function($fonts) {
+    $whitelist = [
+        'Noto Sans',
+        'Arial',
+        'Impact',
+        'thisfontdoesntexist',
+        'Times New Roman',
+        'Vast Shadow',
+        'Work Sans',
+        'Lucida Grande',
+        'Helvetica',
+    ];
+    $shown_fonts = [];
+
+    foreach($whitelist as $font_name) {
+        if(array_key_exists($font_name, $fonts)) {
+            $shown_fonts[$font_name] = $fonts[$font_name];
+        }
+    }
+
+    return $shown_fonts;
+} );
+```
 
 
 == Screenshots ==
