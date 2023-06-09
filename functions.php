@@ -99,12 +99,7 @@ function acfgfs_google_font_enqueue(){
  *
  */
 function acfgfs_get_font_dropdown_array( $field = null ) {
-    $fonts = acfgfs_get_fonts();
-
-    $font_array = array();
-    foreach( $fonts as $font => $data ) {
-        $font_array[$font] = $font;
-    }
+    $font_array = acfgfs_get_fonts();
 
     if( !empty( $field['include_web_safe_fonts'] ) ) {
         $web_safe = acfgfs_get_web_safe_fonts();

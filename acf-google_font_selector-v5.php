@@ -91,11 +91,13 @@ class acf_field_google_font_selector extends acf_field {
 			'layout'		=> 'horizontal',
 		));
 
+		$all_fonts = array_keys(acfgfs_get_font_dropdown_array());
+
 		acf_render_field_setting( $field, array(
 			'label'			=> __('Default Font','acf-google-font-selector-field'),
 			'type'			=> 'select',
 			'name'			=> 'default_font',
-			'choices'       => acfgfs_get_font_dropdown_array()
+			'choices'       => array_combine($all_fonts, $all_fonts),
 		));
 
 
@@ -125,7 +127,7 @@ class acf_field_google_font_selector extends acf_field {
 				<select name="<?php echo esc_attr($field['name']) ?>">
 					<?php
 					$options = acfgfs_get_font_dropdown_array( $field );
-					foreach( $options as $option ) {
+					foreach( $options as $option => $data ) {
 						echo '<option ' . selected( $option, $current_font_family ) . ' value="' . $option . '">' . $option . '</option>';
 					}
 					?>
