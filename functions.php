@@ -134,7 +134,9 @@ function acfgfs_get_font_dropdown_array( $field = null ) {
  */
 function acfgfs_get_font( $font ) {
     $fonts = acfgfs_get_fonts();
-    return $fonts[$font];
+
+    // Make sure we have that font
+    return $fonts[$font] ?? [];
 }
 
 /**
