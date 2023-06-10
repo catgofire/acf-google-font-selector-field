@@ -55,7 +55,7 @@
                             subsets.html( response.subsets );
 
                             var html = jQuery('.acfgfs-preview div').html();
-                            
+
 							font = new_font.replace( ' ', '+' );
 							container.find('.acfgfs-preview').html('<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=' + font + '"><div style="font-family:' + new_font + '"></div>')
 							jQuery('.acfgfs-preview div').html(html);
@@ -64,6 +64,12 @@
                 });
 
 			});
+
+            // The button in the font preview can be clicked to make sure the font matches what's shown in the select input
+            jQuery(document).on('click', '.acfgfs-preview .button', function() {
+                var container = $(this).parents(".acf-input:first");
+                container.find('.acfgfs-font-family select').change();
+            });
 
 		});
 
