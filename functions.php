@@ -60,7 +60,16 @@ function acfgfs_google_font_enqueue(){
     }
     $subsets = array();
     $font_element = array();
+
+    // fonts.google throws a 403 when asking for a system/websafe font
+    $websafe_fonts = acfgfs_get_web_safe_fonts();
+
     foreach( $fonts as $font ) {
+        // fonts.google throws a 403 when asking for a system/websafe font
+        if(in_array($font['font'], $websafe_fonts)) {
+            continue;
+        }
+
         $subsets = array_merge( $subsets, $font['subsets'] );
         $font_name = str_replace( ' ', '+', $font['font'] );
         if( $font['variants'] == array( 'regular' ) ) {
