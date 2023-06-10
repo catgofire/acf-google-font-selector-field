@@ -242,7 +242,7 @@ function acfgfs_get_web_safe_fonts() {
  */
 function acfgfs_get_font_variant_array( $font ) {
     $font = acfgfs_get_font( $font );
-    return $font['variants'];
+    return $font['variants'] ?? [];
 }
 
 
@@ -260,7 +260,7 @@ function acfgfs_get_font_variant_array( $font ) {
  */
 function acfgfs_get_font_subset_array( $font ) {
     $font = acfgfs_get_font( $font );
-    return $font['subsets'];
+    return $font['subsets'] ?? [];
 }
 
 /**
