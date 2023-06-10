@@ -1,0 +1,35 @@
+{
+    "name": "catgofire/acf-gravityforms-add-on",
+    "description": "ACF Google Font Selector [updated 2023]",
+    "type": "wordpress-plugin",
+    "license": "GPL-3.0+",
+    "version": "4.0.0",
+    "authors": [
+        {
+            "name": "Daniel Pataki",
+            "email": "",
+            "homepage": "https://danielpataki.com"
+        },
+        {
+            "name": "matiyin",
+            "email": "martijn@orgonemedia.nl",
+            "homepage": "https://orgonemedia.nl"
+        },
+        {
+            "name": "Justin Lettenmair",
+            "email": "catgofire@gmail.com",
+            "homepage": ""
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+        }
+    },
+    "require": {
+        "php": ">=5.6.4",
+        "composer/installers": "^1.0"
+    },
+    "config": {
+        "platform-check": false
+    }
+}
