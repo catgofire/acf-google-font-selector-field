@@ -1,9 +1,9 @@
 {
-    "name": "catgofire/acf-gravityforms-add-on",
+    "name": "catgofire/acf-google-font-selector-field",
     "description": "ACF Google Font Selector [updated 2023]",
     "type": "wordpress-plugin",
     "license": "GPL-3.0+",
-    "version": "4.0.0",
+    "version": "4.0.1",
     "authors": [
         {
             "name": "Daniel Pataki",
